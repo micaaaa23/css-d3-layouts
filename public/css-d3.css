@@ -16,32 +16,42 @@ body {
 /*** BOX COLORS ***/
 .blue {
     background-color: rgb(57, 57, 234);
+    border: 15px solid darkorange; 
 }
 
 .red {
-    background-color: rgb(248, 80, 80);
+    background-color: lightgreen;
+    border: 15px solid darkgreen; 
 }
 
 .yellow {
-    background-color: rgb(254, 254, 68);
-    border: 3px solid darkorange;
+    background-color:rgb(254, 254, 68);
+    border: 15px solid orange;
 }
 
 .green {
-    background-color: green;
+    background-color: lightgreen;
+    border: 15px solid darkgreen;
 }
 
 .violet {
     background-color: violet;
+    border: 15px solid darkmagenta;
 }
 
 .lightblue {
     background-color: lightskyblue;
+    border: 15px solid darkorchid;
 }
 
 
 .lightcyan {
     background-color: lightcyan;
+}
+
+.orange {
+    background-color: lightpink;
+    border: 15px solid darkorange;
 }
 /*** BOX COLORS ***/
 
@@ -172,7 +182,53 @@ ul li {
 
 
 /* GRID */
+section#grid-layout
+{
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.container
+{
+    height: 80%;
+    width: 80%;
+    border: 3px solid;
+    display: grid;
+    margin-inline: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+}
 
+.item-3{
+    grid-row: 1/2;
+    grid-column: 4/4;
+    
+   
+}
+.item-1{
+    grid-row: 1/6;
+    grid-column: 1/2;
+
+}
+
+.item-2{
+    grid-row: 1/2;
+    grid-column: 2/4;
+
+}
+.item-4{
+    grid-row: 2/2;
+    grid-column: 2/2;
+}
+.item-6
+{
+    grid-row: 2/4;
+    grid-column: 4/4;   
+}
+
+    
 /* GRID ALIGN */
 
 /* GRID TEMPLATING */
